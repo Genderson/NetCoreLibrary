@@ -10,6 +10,6 @@ namespace Services.api.Library.Repository
         Task InsertDocument(TDocument document);
         Task UpdateDocument(TDocument document);
         Task DeleteById(string id);
-        PaginationEntity<TDocument> GetPaginationBy(Expression<Func<TDocument, bool>> filterExpression, PaginationEntity<TDocument> pagination);
+        Task<PaginationEntity<TDocument>> GetPaginationBy(Expression<Func<TDocument, bool>> filterExpression, PaginationEntity<TDocument> pagination);
     }
 }
