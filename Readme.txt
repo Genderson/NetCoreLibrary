@@ -1,0 +1,1 @@
+This is a project built using ASPNET Core 6, Angular, MongoDB and Docker
